@@ -1,0 +1,23 @@
+{% include "components/header.html" %}
+
+<div class="container mt-5 w-50">
+  <h1 class="text-center text-warning display-2 fw-bold">404</h1>
+  <h2 class="text-center text-white">Página não encontrada</h2>
+  <p class="text-center text-white">A página que você está procurando não existe.</p>
+  <p class="text-center text-white mb-5">
+    Volte para a <a href="{% url 'listar' %}">página inicial</a> ou entre em
+    contato conosco se precisar de assistência.
+  </p>
+
+  <figure class="text-end mt-5">
+    <blockquote class="blockquote">
+      <p class="text-white">
+        "Na vastidão cibernética, até mesmo os bits e bytes podem se perder. Em um labirinto digital, este lugar é o santuário para aqueles que buscam respostas, ou talvez, apenas uma conexão perdida."</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      GPT, Chat, 2023.
+    </figcaption>
+  </figure>
+</div>
+
+{% include "components/footer.html" %}

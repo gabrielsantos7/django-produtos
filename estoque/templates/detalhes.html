@@ -1,0 +1,25 @@
+{% include "components/header.html" %}
+
+<div class="card mx-auto mt-5 w-25">
+  <div class="card-header">
+    <h1 class="text-center">{{produto.nome}}</h1>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <span class="fw-bold">Preço: </span>R$ {{produto.preco|floatformat:2}}
+    </li>
+    <li class="list-group-item">
+      <span class="fw-bold">Data de Validade: </span
+      >{{produto.validade|date:"d/m/Y"}}
+    </li>
+    <li class="list-group-item">
+      <span class="fw-bold">Quantidade no estoque: </span>{{produto.quantidade}}
+    </li>
+  </ul>
+
+  <a href="{% url 'listar' %}" class="btn btn-secondary fw-bold mx-auto my-2 px-4"
+    >Voltar</a
+  >
+</div>
+
+{% include "components/footer.html" %}
